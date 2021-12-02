@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-export default function BillsCast() {
-  // Your code here
+function BillsCast({bills}) {
+  // console.log(bills)
 
   return (
     <div className="ui segment inverted blue bill-cast">
@@ -13,4 +13,6 @@ export default function BillsCast() {
     </div>
   );
 }
+
+export default BillsCast
 

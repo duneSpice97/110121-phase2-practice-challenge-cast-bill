@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const BillCard = ({ bill }) => {
+const BillCard = ({ bill, addToCast, fireBill }) => {
+
   return (
     <div className="ui column">
       <div
         className="ui card"
         key={bill.id}
-        onClick={() => console.log('add code to connect event listener')}
+        onClick={() => addToCast(bill)}
       >
         <div className="image">
           <img alt={bill.name} src={bill.photo} />
@@ -35,7 +36,7 @@ const BillCard = ({ bill }) => {
               <button
                 className="ui mini blue button"
                 onClick={() =>
-                  console.log('add code to connect event listener')
+                  fireBill(bill)
                 }
               >
                 FIRE

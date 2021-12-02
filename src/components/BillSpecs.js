@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 const BillSpecs = ({bill}) => {
+
+  // console.log(bill) 
+
   return (
     <div className="ui segment">
       <div className="ui two column centered grid">
